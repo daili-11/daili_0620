@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/phone.js"></script>
+	<title>全民除螨大作战</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+<audio loop="loop" preload="auto" autoplay="autoplay" id="bgmp3">
+  	<source src="music/bg.mp3" type="audio/mpeg">
+</audio>
+
+<audio loop="loop" preload="auto" id="bullet_mp3">
+  	<source src="music/bullet.mp3" type="audio/mpeg">
+</audio>
+
+<audio preload="auto" id="e1_mp3">
+  	<source src="music/enemy1.mp3" type="audio/mpeg">
+</audio>
+<audio preload="auto" id="e2_mp3">
+  	<source src="music/enemy1.mp3" type="audio/mpeg">
+</audio>
+<audio preload="auto" id="e3_mp3">
+  	<source src="music/enemy1.mp3" type="audio/mpeg">
+</audio>
+<audio preload="auto" id="e4_mp3">
+  	<source src="music/enemy1.mp3" type="audio/mpeg">
+</audio>
+<audio preload="auto" id="e5_mp3">
+  	<source src="music/enemy1.mp3" type="audio/mpeg">
+</audio>
+
+<audio preload="auto" id="bomb_mp3">
+  	<source src="music/bomb.mp3" type="audio/mpeg">
+</audio>
+
+<audio preload="auto" id="over_mp3">
+  	<source src="music/game_over.mp3" type="audio/mpeg">
+</audio>
+
+<img src="img/yue.png" alt="" id="yinyuetubiao" class="yinyuetubiao">
+
+<div class="tishitubiao"></div>
+
+<div class="meng00"></div>
+
+<!-- 图片loading -->
+<div class="tu_loading" style="position: absolute;top: 200%;left: 0;overflow: hidden;"></div>
+
+<div class="by">
+
+	<!-- loading -->
+	<div class="loading">
+		<div class="loading_div">
+			<div class="loading_biaoti"></div>
+			<div class="loading_guai">
+				<div class="loading_guai_1"></div>
+				<div class="loading_guai_2"></div>
+				<div class="loading_guai_3"></div>
+			</div>
+			<div class="loading_tiao">
+				<div class="loading_t">
+					<div class="loading_t_left"></div>
+					<div class="loading_t_right"></div>
+				</div>
+			</div>
+			<div class="loading_zi">
+				0%
+			</div>
+		</div>
+	</div>
+
+	<!-- 游戏页面 -->
+	<canvas width="640" height="1136" id="canvas1"></canvas>
+
+	<!-- 游戏结束页 -->
+	<div class="over">
+		<div class="over_left"></div>
+		<div class="over_right"></div>
+		<div class="over_center">
+			<div class="over_superman"></div>
+			<div class="over_guai">
+				<div class="loading_guai_1"></div>
+				<div class="loading_guai_2"></div>
+				<div class="loading_guai_3"></div>
+			</div>
+			<div class="over_to">
+				<div class="over_to_s over_0" _in="0"></div>
+				<div class="over_to_s over_1" _in="1"></div>
+				<div class="over_to_s over_2" _in="2"></div>
+			</div>
+			<div class="over_co">
+				<!-- 排行榜 -->
+				<div class="over_co_s over_co_0">
+					<div class="ranking">
+						<!-- 玩家1 -->
+						<div class="ranking_s">
+							<div class="ranking_s_rank"></div>
+							<div class="ranking_s_left">
+								<!-- 玩家头像 -->
+								<img src="img/story_1_bg.png" class="ranking_tou">
+								<!-- 玩家昵称 -->
+								<span class="ranking_name">热让他人如果的范围如果且而过问过</span>
+							</div>
+							<div class="ranking_s_right"><span>9999</span>分</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- 游戏成绩 -->
+				<div class="over_co_s over_co_1 over_co_s_e">
+					<div class="over_co_1_box">
+						<span class="depict_1">哎哟! 不错哦!</span>
+						<br>
+						你获得了<span class="mark">5000</span>分!
+						<br>
+						<span class="depict_2">击败全国</span>
+						<br>
+						<span class="scale">90%</span>玩家哟!
+					</div>
+				</div>
+				<!-- 众筹实况 -->
+				<div class="over_co_s over_co_2">
+					<div class="over_co_2_box">
+						目前已有<span class="people">221</span>人参与众筹
+						<br>
+						产品已降价<span class="cheapen">1000</span>元
+						<br>
+						现价为<span class="cost">12999</span>元
+						<br>
+						<img src="img/product.png" class="product">
+						<br>
+						<span class="Jump">查看众筹款床垫</span>
+					</div>
+				</div>
+			</div>
+			<div class="over_anniu_1"></div>
+			<div class="over_anniu_2"></div>
+		</div>
+	</div>
+
+	<!-- 提示分享页 -->
+	<div class="fx">
+		<div class="fx_shou"></div>
+	</div>
+
+	<!-- 产品页 -->
+	<div class="cp_box">
+		<div class="cp">
+			<div class="logo logo2"></div>
+			<div class="cp_biaoti1"></div>
+			<div class="cp_biaoti2"></div>
+			<div class="cp_biaoti3"></div>
+			<div class="cp_wen1"></div>
+			<div class="cp_wen2"></div>
+			<div class="cp_wen3"></div>
+			<div class="cp_wen4"></div>
+			<div class="cp_wen5"></div>
+			<div class="cp_wen6"></div>
+			<div class="cha"></div>
+		</div>
+	</div>
+
+	<!-- 内容 -->
+	<div class="content hide">
+
+		<!-- 倒计时页 -->
+		<div class="countdown_box">
+			<div class="countdown">
+				<div class="countdown_go"></div>
+				<div class="countdown_1"></div>
+				<div class="countdown_2"></div>
+				<div class="countdown_3"></div>
+			</div>
+		</div>
+
+		<!-- 游戏玩法页 -->
+		<div class="rule">
+			<div class="cha cha2"></div>
+		</div>
+
+		<!-- 首页 -->
+		<div class="shouye">
+			<div class="logo"></div>
+			<div class="shouye_guai_1"></div>
+			<div class="shouye_guai_2"></div>
+			<div class="shouye_guai_3"></div>
+			<div class="shouye_superman_bg"></div>
+			<div class="shouye_superman_guang"></div>
+			<div class="shouye_superman"></div>
+			<div class="shouye_biaoti"></div>
+			<div class="shouye_anniu_1">
+				<img src="img/shouye_anniu_1.png" class="shouye_anniu_1_img">
+			</div>
+			<div class="shouye_anniu_2">
+				<span>活动规则</span>
+			</div>
+			<div class="shouye_anniu_3">
+				<span>查看奖品</span>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- 活动规则 -->
+	<div class="shouye_guize_box hide">
+		<div class="shouye_guize">
+			<div class="cha"></div>
+		</div>
+	</div>
+	<!-- 查看奖品 -->
+	<div class="shouye_jiangpin_box hide">
+		<div class="shouye_jiangpin">
+			<div class="cha cha2"></div>
+		</div>
+	</div>
+
+	<!-- 故事页 -->
+	<div class="story_box hide">
+		<div class="story_move">
+			<div class="story">
+				<div class="story_div story_1_bg">
+					<div class="story_1_bg_z"></div>
+				</div>
+				<div class="story_div story_2_bg"></div>
+				<div class="story_div story_3_bg"></div>
+				<div class="story_div story_describe_1"></div>
+				<div class="story_div story_describe_2"></div>
+				<div class="story_div story_describe_3"></div>
+				<div class="story_div story_superman"></div>
+			</div>	
+		</div>
+		<div class="story_tishi">点击关闭</div>
+	</div>
+
+</div>
+	
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
