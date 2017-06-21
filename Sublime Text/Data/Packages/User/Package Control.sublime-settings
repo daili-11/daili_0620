@@ -1,0 +1,25 @@
+{
+	"auto_upgrade": false,
+	"auto_upgrade_ignore":
+	[
+	],
+	"auto_upgrade_last_run": null,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"3024 Color Scheme",
+		"ConvertToUTF8",
+		"Default",
+		"DocBlockr",
+		"Emmet",
+		"IMESupport",
+		"JavaScript Completions",
+		"JavaScript Snippets",
+		"Nil-Theme",
+		"Package Control",
+		"PyV8",
+		"ZZZ"
+	]
+}
