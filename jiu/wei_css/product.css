@@ -1,0 +1,100 @@
+.product-list-section {
+    font-family: "Microsoft Yahei";
+    background-color: #fff;
+}
+.product-list-section > .x-wrapper {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 100px;
+    padding-bottom: 99px;
+
+    text-align: center;
+    color: #413232;
+}
+.product-list-section > .x-wrapper .inner-banner {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -90px;
+    margin-bottom: 30px;
+}
+.product-list-section > .x-wrapper .inner-banner a {
+    display: block;
+    line-height: 0;
+    height: 100px;
+    
+}
+.product-list-section > .x-wrapper > h1 {
+    font-size: 36px;
+    font-weight: normal;
+}
+.product-list-section > .x-wrapper > h4 {
+    font-size: 18px;
+    margin-top: 18px;
+}
+.product-list-section > .x-wrapper > p {
+    margin-top: 100px;
+    font-size: 26px;
+}
+.product-list-section > .x-wrapper > p > img {
+    vertical-align: -10px;
+}
+.product-list-section > .x-wrapper > p > a {
+    color: #138ECF;
+}
+.product-list-section > .x-wrapper > ul {
+    margin-top: 71px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-list-section > .x-wrapper > ul > li {
+    display: block;
+    float: left;
+    width: 388px;
+    margin-left: 14px;
+}
+.product-list-section > .x-wrapper > ul > li.x-first {
+    margin-left: 0;
+}
+
+.product-list-section.shuang12 > .x-wrapper > ul > li a {
+    background-image: url("/newstyle/wei_image/1212/product_list_icon.png");
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+.product-list-section > .x-wrapper > ul > li a:hover {
+    border-color: #E60012;
+}
+.product-list-section > .x-wrapper > ul > li a > .x-img {
+    text-align: center;
+}
+.product-list-section > .x-wrapper > ul > li a > h4 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #1F1F1F;
+}
+.product-list-section > .x-wrapper > ul > li a > h5 {
+    font-size: 18px;
+    margin-top: 12px;
+    color: #5E5E5E;
+}
+.copyright {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    min-width: 600px;
+    color: #f1f1f1;
+    /*background-color: #fff;*/
+    background:url(../dai_images/di_bg.png) center center no-repeat;
+}
+.copyright p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.cb {
+    clear: both;
+}
