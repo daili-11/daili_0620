@@ -1,0 +1,24 @@
+/*重置CSS*/
+*{ padding:0; margin:0}
+body{font-size:14px; font-family:"Microsoft YaHei"; line-height:20px; background:#fff; color:#f1f1f1;}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,input{margin:0;padding:0;border:0;outline:0;font-weight: normal;}
+table{border-collapse:separate;border-spacing:0;width:100%}
+img{border:none;vertical-align:top;}
+ul, ol{margin:0;list-style:none} 
+ul,li{ list-style-type:none}
+em{font-style: normal;}
+a{color: #f1f1f1;text-decoration:none;}
+/***清除浮动***/
+.fl{float: left;}
+.fr{float: right;}
+.clear{content: '';clear: both;display: block;}
+.clearfix:after,.clear:before{display:table;content:'';}
+.clearfix:after{clear:both;overflow:hidden;}
+.clearfix{zoom:1;}
+.swiper-container{width: 100%;height: 100%;}
+/***清除浮动***/
+/*重置CSS*/
+/*.fl {float:left;display:inline;}*/
+/*.fr {float:right;display:inline;}*/
+
+
