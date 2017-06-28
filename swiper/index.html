@@ -1,0 +1,72 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width,height=device-height,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>  
+    <title>愿我们相伴到老 张涛我爱你</title>  
+    <link rel="stylesheet" href="css/swiper.min.css"/>  
+    <style type="text/css">  
+    body {  
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;  
+        font-size: 14px;  
+        color:#000;  
+        margin: 0;  
+        padding: 0;  
+    }  
+    .swiper-container {  
+        margin: 0 auto;  
+    }  
+    .swiper-slide {  
+        text-align: center;  
+        font-size: 18px;  
+        background: rgba(252,157,154,.1);  
+    }
+    .swiper-slide img{width: 100%;}
+    .swiper-pagination-bullet{border-radius: 0;background: #ff0000;}  
+    </style>  
+</head>  
+<body>
+    <audio loop="loop" preload="auto" autoplay="autoplay" id="bgmp3">
+        <source src="mp3/mp3.mp3" type="audio/mpeg">
+    </audio>  
+    <div class="swiper-container" id="swiper">  
+        <div class="swiper-wrapper">  
+            <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/7.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/8.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/9.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/10.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/11.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/12.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/13.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/14.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/15.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/16.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/17.jpg" alt=""></div>
+        </div>  
+          
+        <div class="swiper-pagination"></div>  
+          
+    </div>  
+      
+    <script src="js/swiper.min.js"></script>  
+    <script>  
+        window.onload=function(){  
+            var swiper = document.getElementById("swiper");  
+            var scale = window.screen.height / window.screen.width;  
+            swiper.style.height = document.body.clientWidth * scale + "px";  
+        }  
+        var mySwiper = new Swiper('.swiper-container',{  
+            direction: 'horizontal',  
+            loop: false,  
+            pagination: '.swiper-pagination',
+            autoplay: 3000  
+        });      
+    </script>  
+</body>  
+</html>  
